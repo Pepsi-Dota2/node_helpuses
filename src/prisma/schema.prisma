@@ -8,11 +8,11 @@ datasource db {
 }
 
 model users {
-  userId    Int       @id @unique(map: "users_pk2") @default(autoincrement())
+  userId    Int       @id @unique(map: "userId") @default(autoincrement())
   username  String    @db.VarChar(80)
   email     String    @db.VarChar(80)
   password  String    @db.VarChar(255)
-  tel       String    @unique(map: "tel") @db.VarChar(8)
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @default(now())
+  tel       String?   @unique(map: "tel") @db.VarChar(8)
+  createdAt DateTime? @default(now()) @db.DateTime(0)
+  updatedAt DateTime? @default(now()) @db.DateTime(0)
 }

@@ -9,17 +9,15 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(`${env.BASE_PATH}/v1`, router)
+app.use(`${env.BASE_PATH}/v1`, router);
 
-app.get('/', async (req: any, res: any) => {
-    return res.json({
-        status: "Welcome to my application",
-    });
+app.get("/", async (req: any, res: any) => {
+  return res.json({
+    status: "Welcome to my application",
+  });
 });
 
 // set port, listen for requests
-app.listen(10000, () => {
-    console.log("Server is running on port 10000");
+app.listen(env.NODE_PORT, () => {
+  console.log(`Server is running on port  :${env.NODE_PORT}${env.BASE_PATH}  `);
 });
-
-

@@ -100,7 +100,7 @@
 
 "@prisma/client@^5.17.0":
   version "5.17.0"
-  resolved "https://registry.npmjs.org/@prisma/client/-/client-5.17.0.tgz"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.17.0.tgz#9079947bd749689c2dabfb9ecc70a24ebefb1f43"
   integrity sha512-N2tnyKayT0Zf7mHjwEyE8iG7FwTmXDHFZ1GnNhQp0pJUObsuel4ZZ1XwfuAYkq5mRIiC/Kot0kt0tGCfLJ70Jw==
 
 "@prisma/debug@5.17.0":
@@ -1427,7 +1427,7 @@ picomatch@^2.0.4, picomatch@^2.2.1:
 
 prisma@^5.17.0:
   version "5.17.0"
-  resolved "https://registry.npmjs.org/prisma/-/prisma-5.17.0.tgz"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-5.17.0.tgz#267b43921ab94805b010537cffa5ccaf530fa066"
   integrity sha512-m4UWkN5lBE6yevqeOxEvmepnL5cNPEjzMw2IqDB59AcEV6w7D8vGljDLd1gPFH+W6gUxw9x7/RmN5dCS/WTPxA==
   dependencies:
     "@prisma/engines" "5.17.0"

@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.ts",
     "db:pull": "yarn prisma db pull",
-    "db:generate": "yarn prisma generate"
+    "db:generate": "yarn prisma generate",
+    "db": "yarn db:pull && yarn db:generate"
   },
   "prisma": {
     "schema": "./src/prisma/schema.prisma"
@@ -18,7 +19,6 @@
   "dependencies": {
     "@aws-crypto/sha256-js": "^5.2.0",
     "@aws-sdk/middleware-logger": "^3.609.0",
-    "@prisma/client": "^5.17.0",
     "@prisma/generator-helper": "^5.17.0",
     "@types/bcrypt": "^5.0.2",
     "@types/body-parser": "^1.19.5",
@@ -42,6 +42,7 @@
     "winston": "^3.13.1"
   },
   "devDependencies": {
+    "@prisma/client": "^5.17.0",
     "@types/node": "^20.14.12",
     "prisma": "^5.17.0",
     "ts-node": "^10.9.2",
